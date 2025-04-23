@@ -1,0 +1,828 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: 'Ppobjectsans', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(108, 91, 123, 0.85) rgba(108, 91, 123, 0.65);
+    background: none;
+
+}
+
+body {
+    background: #fff;
+}
+
+.TopHeaderBox {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    max-width: 1140px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.navbtn {
+    color: rgba(0, 0, 0, 0.8) !important;
+    margin: 0;
+    padding: 10px 12px 13px 12px;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: 'century gothic', 'calibri', 'verdana', 'arial';
+    transition: 0.2s;
+    cursor: pointer;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+.main_content {
+    box-shadow: none;
+}
+
+body a {
+    color: #5593cb;
+    text-decoration: none;
+}
+
+.positionUnset {
+    left: unset;
+}
+
+.positionLeft-100 {
+    left: -100%;
+}
+
+.main_content h2 {
+    margin: 30px 0px 20px 0px;
+    font-size: 1.6em;
+    line-height: 32px;
+    font-weight: normal;
+    color: #515151;
+    text-align: center;
+}
+
+.scholarshipSection h2,
+.leadingCompanies h2,
+.choosePlan h2,
+.queSection h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.videosSection h2 {
+    color: #000;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+
+/* Carousel css */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    display: flex;
+    padding: 30px 0;
+    background: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+}
+
+.logos:before,
+.logos:after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logoSlider {
+    display: flex;
+    -webkit-animation: slide 100s linear infinite;
+    animation: slide 100s linear infinite;
+}
+
+.logos:hover .logoSlider {
+    animation-play-state: paused;
+}
+
+.logoSlider img {
+    height: 80px;
+    margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .logoSlider img {
+        height: 60px;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoSlider img {
+        height: 50px;
+        margin: 0 10px;
+    }
+}
+
+.videosSection h2,
+.scholarshipSection h2,
+.leadingCompanies h2,
+.choosePlan h2,
+.queSection h2 {
+    color: #000;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.bottomSection h3 {
+    color: #000;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 100;
+}
+
+.sectionMargin {
+    margin: 25px 0;
+}
+
+.sectionTop {
+    padding: 20px;
+    display: table;
+    margin-top: 66px !important;
+}
+
+.sectionTopLeft {
+    width: 63%;
+    padding-right: 2%;
+    float: left;
+}
+
+.sectionTopLeft h1 {
+    margin: 15px 0px;
+    color: #000;
+    font-size: 58px;
+    line-height: 1.1;
+    font-weight: 100;
+}
+
+.sectionTopLeft p {
+    color: #0000009e;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.an {
+    font-size: 40px;
+}
+
+.sectionTopRight {
+    width: 35%;
+    float: left;
+    text-align: center;
+}
+
+.sectionTopRight iframe {
+    float: right;
+    height: 480px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.threeVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+}
+
+.threeVideo .video iframe {
+    height: 450px;
+    width: 100%;
+}
+
+.video h3 {
+    margin: 0;
+    text-align: center;
+    color: #000;
+    font-weight: 100;
+}
+
+.scholarshipSection {
+    padding: 20px 0px;
+    background: linear-gradient(to right, #182c5d, #1E1E63);
+}
+
+.scholarshipSection h2 {
+    color: #fff;
+}
+
+.scholars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.scholars .scholar {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3sease-in-out;
+    max-width: 250px;
+    font-weight: 100;
+}
+
+.scholar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.scholar .name {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.scholar .rank {
+    font-size: 16px;
+    color: #f0a500;
+    color: #ffcc00;
+    margin-top: -10px;
+}
+
+/* Faq start */
+.faq-container {
+    margin: auto;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 8px;
+    animation: fadeInFaq 1s ease-in-out;
+}
+
+@keyframes fadeInFaq {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+
+.faq-item-span {
+    font-size: 11pt;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-variant-position: normal;
+    font-variant-emoji: normal;
+    vertical-align: baseline;
+
+}
+
+.faq-text-span {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+}
+
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    line-height: 1.2;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    font-weight: 400;
+    float: right;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 5px;
+    opacity: 0;
+    padding: 10px;
+    background: #E0E0E3;
+    border-radius: 5px;
+    line-height: 1.2;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.faq-answer.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.faq-question::before {
+    content: counter(question) ". ";
+}
+
+.faq-container {
+    counter-reset: question;
+}
+
+.faq-item {
+    counter-increment: question;
+}
+
+.faq-answer ul {
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+    width: unset;
+    list-style: disc;
+}
+
+.faq-answer li {
+    margin-bottom: 10px;
+}
+
+.load-more-btn {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    background-color: #5C44BF;
+    color: white;
+
+}
+
+.load-more-btn:hover {
+    background-color: #3c289d;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Faq ends */
+
+.planContainer {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.plan {
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background: #a266c9;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 30px 20px 20px 20px;
+    transition: all 0.3s ease;
+
+
+}
+
+.plan h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #000;
+
+}
+
+.planDescription {
+    height: 100px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.price {
+    color: #000;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.1;
+    font-size: 22px;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.plan:nth-child(2) {
+    background: #a266c9;
+
+    h2,
+    .planDescription,
+    .price,
+    .old-price {
+        color: #fff;
+    }
+}
+
+.plan:nth-child(3) {
+    background: #420ea1;
+
+    h2,
+    .planDescription,
+    .price,
+    .old-price,
+    .limitedTime {
+        color: #fff;
+    }
+}
+
+.plan .designDiv {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.plan .designDiv p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+
+}
+
+.price .limitedTime {
+    font-size: 14px;
+    color: #000;
+}
+
+.plan ul {
+    text-align: left;
+    margin: 15px 0;
+    min-height: 580px;
+    margin: 20px auto 0 auto;
+    list-style: none;
+    padding: 0;
+
+}
+
+.plan li {
+    margin: 0;
+    padding: 6px 0px !important;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.plan li img {
+    width: 12px;
+    vertical-align: middle;
+}
+
+.availableDiv {
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 300px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.availableDiv:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.notavailableDiv {
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 200px;
+    background: #fff;
+
+}
+
+.notavailableDiv li .redSign {
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+li.available,
+li.unavailable {
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1;
+    display: flex;
+
+}
+
+li.available img,
+li.unavailable .redSign {
+    margin-top: 2px;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.available,
+.unavailable {
+    color: #000 !important;
+}
+
+.color-link {
+    color: #a34cdb !important;
+    text-shadow: 0 0 10px #a34cdb;
+}
+
+.main-btn {
+    background: #000;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    display: table;
+    padding: 10px 20px;
+    box-shadow: inset 3px 3px 1px #bebebe, inset -3px -3px 8px #ffffff;
+    font-size: 14px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    transition: all 0.35s ease;
+
+    position: relative;
+    z-index: 1;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2),
+        5px 5px 15px #bebebe,
+        -5px -5px 15px #ffffff;
+}
+
+/* ................ */
+
+@media (max-width:1000px) {
+
+    .planBuy .price {
+        font-size: 20px;
+    }
+
+    .planBuy .plan .main-btn {
+        font-size: 12px;
+    }
+
+    .threeVideo {
+        gap: 1%;
+    }
+
+    .threeVideo .video {
+        width: 29%;
+    }
+
+    .planContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planBuy {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    /* ............. */
+
+    .logos {
+        width: 100vw;
+    }
+
+    .scholar img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .scholar .name {
+        font-size: 20px;
+    }
+
+    .scholar .rank {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main_content {
+        padding-top: 60px;
+        margin-left: 0;
+    }
+
+    .videosSection h2,
+    .scholarshipSection h2,
+    .leadingCompanies h2,
+    .choosePlan h2,
+    .queSection h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .videosSection h2 {
+        padding: 0;
+    }
+
+    .bottomSection h3 {
+        font-size: 26px;
+    }
+
+    .sectionTopLeft {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .sectionTopLeft h1 {
+        font-size: 30px;
+    }
+
+    .sectionTopLeft p {
+        font-size: 15px;
+    }
+
+    .an {
+        font-size: 30px;
+    }
+
+    .sectionTopRight {
+        width: 100%;
+        float: none;
+    }
+
+    .sectionTopRight iframe {
+        width: 90%;
+        height: 480px;
+        float: none;
+    }
+
+    /* ........... */
+    .planContainer {
+        align-items: center;
+    }
+
+    .planBuy {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .planDescription {
+        height: unset;
+    }
+
+    .plan ul,
+    .availableDiv,
+    .notavailableDiv {
+        min-height: unset;
+        height: unset;
+    }
+
+    .plan li {
+        font-size: 14px;
+    }
+
+    .plan .designDiv {
+        min-height: 140px;
+    }
+
+    /* .......... */
+
+    .threeVideo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .threeVideo .video {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .scholars {
+        grid-template-columns: repeat(2, 1fr);
+        gap: unset;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+}
